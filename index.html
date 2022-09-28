@@ -1,43 +1,453 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <title>Portal de Games</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a href="#">Logo Games</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Destaques <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Lançamentos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Plataformas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Publishers</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar Games" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-        </form>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Portal de Games</title>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/119554adfb.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="imagens/logo.png" alt="" width="30" height="24"> Games </img>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destaques</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Plataformas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Publishers</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 d-inline" type="search" placeholder="Pesquisar games" aria-label="Search" name="pesquisa">
+            <input class="btn btn-primary d-inline" type="submit" value="Buscar">
+          </form>
+        </div>
       </div>
     </nav>
+  </header>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+  <main class="bg-light">
+    <section id="lancamentos">
+      <h1 class="text-center py-3 py-lg-5m-0">Destaques</h1>
+      <div id="trailers-carousel" class="carousel slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#trailers-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active pb-5">
+            <div class="container-fluid row px-6 m-0">
+
+              <div class="col-12 col-lg-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/QkkoHAzjnUs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <h3>Grand Theft Auto V</h3>
+                <p class="pt-1">
+                  <span class="fw-bold">Sobre: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Sed sed risus pretium quam vulputate dignissim. Est sit amet facilisis magna etiam tempor orci. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Volutpat est velit egestas dui id ornare arcu odio. Ullamcorper dignissim cras tincidunt lobortis. Vitae purus faucibus ornare suspendisse sed nisi. Egestas dui id ornare arcu odio ut sem nulla. Et malesuada fames ac turpis egestas sed tempus.
+                </p>
+                <div class="container-fluid row px-0">
+                  <span class="col"><span class="fw-bold">Publisher: </span>Rockstar Games</span>
+                  <span class="col"><span class="fw-bold">Lançamento: </span>September, 2013</span>
+                </div>
+                <div class="desc">
+                  <span class="col "><span class="fw-bold">Plataformas: </span>PlayStation 4, Xbox One, PlayStation 3, Xbox Series X e Series S, Xbox 360, PlayStation 5, Microsoft Windows</span>
+                </div>
+                <span class="col"><span class="fw-bold">Gênero: </span>Mundo aberto, Jogo eletrônico de ação e aventura</span>
+                <p class="fw-bold pt-3">Avaliação: 92</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item pb-5">
+            <div class="container-fluid row px-6 m-0">
+              <div class="col-12 col-lg-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/FcITAzKW3fY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <h3>Grand Theft Auto V</h3>
+                <p class="pt-1">
+                  <span class="fw-bold">Sobre: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Sed sed risus pretium quam vulputate dignissim. Est sit amet facilisis magna etiam tempor orci. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Volutpat est velit egestas dui id ornare arcu odio. Ullamcorper dignissim cras tincidunt lobortis. Vitae purus faucibus ornare suspendisse sed nisi. Egestas dui id ornare arcu odio ut sem nulla. Et malesuada fames ac turpis egestas sed tempus.
+                </p>
+                <div class="container-fluid row px-0">
+                  <span class="col"><span class="fw-bold">Publisher: </span>Devolver Digital</span>
+                  <span class="col"><span class="fw-bold">Lançamento: </span>August, 2020</span>
+                </div>
+                <div class="desc">
+                  <span class="col "><span class="fw-bold">Plataformas: </span>Nintendo Switch, PlayStation 4, Xbox One, PlayStation 5, Microsoft Windows, Xbox Series X e Series S</span>
+                </div>
+                <span class="col"><span class="fw-bold">Gênero: </span>Battle royale, Jogo eletrônico de plataforma</span>
+                <p class="fw-bold pt-3">Avaliação: 92</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item pb-5">
+            <div class="container-fluid row px-6 m-0">
+
+              <div class="col-12 col-lg-6">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/o3V-GvvzjE4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <h3>FIFA 23</h3>
+                <p class="pt-1">
+                  <span class="fw-bold">Sobre: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Sed sed risus pretium quam vulputate dignissim. Est sit amet facilisis magna etiam tempor orci. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Volutpat est velit egestas dui id ornare arcu odio. Ullamcorper dignissim cras tincidunt lobortis. Vitae purus faucibus ornare suspendisse sed nisi. Egestas dui id ornare arcu odio ut sem nulla. Et malesuada fames ac turpis egestas sed tempus.
+                </p>
+                <div class="container-fluid row px-0">
+                  <span class="col"><span class="fw-bold">Publisher: </span>EA Sports</span>
+                  <span class="col"><span class="fw-bold">Lançamento: </span>September, 2022</span>
+                </div>
+                <div class="desc">
+                  <span class="col "><span class="fw-bold">Plataformas: </span>Xbox Series X e Series S, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5, Microsoft Windows</span>
+                </div>
+                <span class="col"><span class="fw-bold">Gênero: </span>Jogo eletrônico de simulação</span>
+                <p class="fw-bold pt-3">Avaliação: 92</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="bg-light container-fluid px-5">
+      <div class="row">
+          <div class="col-6">
+            <h1 class="text-start py-3">Lançamentos</h1>
+          </div>
+          <div class="col-6" style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-evenly;
+          margin-right: -37px;">
+              <div class="dropdown" style="text-align: right;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Gênero
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Adventure</a></li>
+                      <li><a class="dropdown-item" href="#">Indie</a></li>
+                      <li><a class="dropdown-item" href="#">Shooter</a></li>
+                  </ul>
+              </div>
+              <div class="dropdown" style="text-align: right;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Ordem: Popularidade
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Mais Populares</a></li>
+                    <li><a class="dropdown-item" href="#">Menos Populares</a></li>
+                    <li><a class="dropdown-item" href="#">Em breve</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="px-5 container-fluid">
+      <div class="row">
+          <div class="col-3">
+              <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+                <p class="fs-4 py-1"><span class="fw-bold">FIFA 23</span></p>
+                <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">92</span></p>
+              </div>
+              <div class="card" width="100%">
+                  <iframe class="card-img-top" src="https://www.youtube.com/embed/o3V-GvvzjE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                  <div class="card-body">
+                      <p class="card-text"><b>Mais detalhes...</b></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-3">
+            <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+              <p class="fs-4 py-1"><span class="fw-bold">Grand Theft Auto V</span></p>
+              <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">92</span></p>
+            </div>
+            <div class="card" width="100%">
+                <iframe class="card-img-top" src="https://www.youtube.com/embed/QkkoHAzjnUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                <div class="card-body">
+                    <p class="card-text"><b>Mais detalhes...</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+          <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+            <p class="fs-4 py-1"><span class="fw-bold">Fall Guys</span></p>
+            <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">91</span></p>
+          </div>
+          <div class="card" width="100%">
+              <iframe class="card-img-top" src="https://www.youtube.com/embed/5EvE0hRNsJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+              <div class="card-body">
+                  <p class="card-text"><b>Mais detalhes...</b></p>
+              </div>
+          </div>
+      </div>
+      <div class="col-3">
+        <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+          <p class="fs-4 py-1"><span class="fw-bold">God of War</span></p>
+          <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">99</span></p>
+        </div>
+        <div class="card" width="100%">
+            <iframe class="card-img-top" src="https://www.youtube.com/embed/x6oF3Jxu7X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+            <div class="card-body">
+                <p class="card-text"><b>Mais detalhes...</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-3">
+      <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+        <p class="fs-4 py-1"><span class="fw-bold">The Sims 4</span></p>
+        <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">85</span></p>
+      </div>
+      <div class="card" width="100%">
+          <iframe class="card-img-top" src="https://www.youtube.com/embed/1WXdXjROSbk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+          <div class="card-body">
+              <p class="card-text"><b>Mais detalhes...</b></p>
+          </div>
+      </div>
+  </div>
+  <div class="col-3">
+    <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+      <p class="fs-4 py-1"><span class="fw-bold">Battlefield 4</span></p>
+      <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">85</span></p>
+    </div>
+    <div class="card" width="100%">
+        <iframe class="card-img-top" src="https://www.youtube.com/embed/P9fK77eE7fs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+        <div class="card-body">
+            <p class="card-text"><b>Mais detalhes...</b></p>
+        </div>
+    </div>
+</div>
+<div class="col-3">
+  <div class="row" style="display: flex; flex-wrap: nowrap; align-content: center;">
+    <p class="fs-4 py-1"><span class="fw-bold">Forza Horizon 5</span></p>
+    <p class="fs-4 py-1" style="margin-left: -51px;"><span class="fw-bold">85</span></p>
+  </div>
+  <div class="card" width="100%">
+      <iframe class="card-img-top" src="https://www.youtube.com/embed/agI0xMBQo2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+      <div class="card-body">
+          <p class="card-text"><b>Mais detalhes...</b></p>
+      </div>
+  </div>
+</div>
+    </div>
+  </div>
+    <section class="bg-light container-fluid px-5">
+      <h1 class="text-start py-3">Publishers</h1>
+      <div class="container-fluid justify-content-between">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <p class="fs-3 py-2"><span class="fw-bold">Publisher 1:</span> Rockstar Games</p>
+            <div class="ratio ratio-16x9">
+              <img width="560" height="315" src="https://viciados.net/wp-content/uploads/2020/02/Rockstar-Games-e3-take-two.jpg"></img>
+            </div>
+            <p class="my-0"><span class="fw-bold">Principais jogos </span></p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <ul>
+                <li>Grand Theft Auto V</li>
+                <li>Red Dead Redemption 2</li>
+                <li>Bully</li>
+              </ul> 
+            </div>
+            <span class="pe-5 fw-bold" style="float: right">Mais informaçoes...</span>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="fs-3 py-2"><span class="fw-bold">Publisher 2: </span>EA SPORTS</p>
+            <div class="ratio ratio-16x9">
+              <img width="560" height="315" src="https://media.contentapi.ea.com/content/dam/eacom/images/2019/10/ea-featured-image-generic-brand-logo.png.adapt.crop16x9.1023w.png"></img>
+            </div>
+            <p class="my-0"><span class="fw-bold">Principais jogos </span></p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <ul>
+                <li>EA SPORTS™ FIFA 23</li>
+                <li>Burnout Paradise</li>
+                <li>Battlefield 2042</li>
+              </ul> 
+            </div>
+            <span class="pe-5 fw-bold" style="float: right">Mais informaçoes...</span>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="fs-3 py-2"><span class="fw-bold">Publisher 3: </span>Sony Games</p>
+            <div class="ratio ratio-16x9">
+              <img width="560" height="315" src="https://meups.com.br/wp-content/uploads/2021/08/estudio-de-jogos-em-manchester.jpg"></img>
+            </div>
+            <p class="my-0"><span class="fw-bold">Principais jogos </span></p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <ul>
+                <li>The Last Of Us Part II</li>
+                <li>Marvel's Spider-Man: Miles Morales</li>
+                <li>God of War</li>
+              </ul>              
+            </div>
+            <span class="pe-5 fw-bold" style="float: right">Mais informaçoes...</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center justify-content-lg-end pt-3">
+        <button type="button" class="btn btn-dark">Carregar mais plataformas</button>
+      </div>
+    </section>
+    <section class="bg-light container-fluid px-5">
+      <h1 class="text-start py-3">Plataformas</h1>
+      <div class="container-fluid justify-content-between">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <p class="fs-3 py-2"><span class="fw-bold">Plataforma 1:</span> Steam</p>
+            <div class="ratio ratio-16x9">
+              <img width="560" height="315" src="https://cdn.akamai.steamstatic.com/store/home/store_home_share.jpg"></img>
+            </div>
+            <p class="my-0"><span class="fw-bold">Principais jogos </span></p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <ul>
+                <li>Counter Strike: Global-Offensive</li>
+                <li>Dota 2</li>
+                <li>Lost Ark</li>
+              </ul> 
+            </div>
+            <span class="pe-5 fw-bold" style="float: right">Mais informaçoes...</span>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="fs-3 py-2"><span class="fw-bold">Plataforma 2: </span>Origin</p>
+            <div class="ratio ratio-16x9">
+              <img width="560" height="315" src="https://adrenaline.com.br/uploads/chamadas/Logo_Origin_(Imagem_Reprodu%C3%A7%C3%A3o_Electronic_Arts).jpg"></img>
+            </div>
+            <p class="my-0"><span class="fw-bold">Principais jogos </span></p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <ul>
+                <li>EA SPORTS™ FIFA 23</li>
+                <li>The Sims 4</li>
+                <li>Apex Legends</li>
+              </ul> 
+            </div>
+            <span class="pe-5 fw-bold" style="float: right">Mais informaçoes...</span>
+          </div>
+          <div class="col-12 col-lg-4">
+            <p class="fs-3 py-2"><span class="fw-bold">Plataforma 3: </span>Epic Games</p>
+            <div class="ratio ratio-16x9">
+              <img width="560" height="315" src="https://static-assets-prod.epicgames.com/epic-store/static/webpack/25c285e020572b4f76b770d6cca272ec.png"></img>
+            </div>
+            <p class="my-0"><span class="fw-bold">Principais jogos </span></p>
+            <div class="d-flex flex-wrap justify-content-between">
+              <ul>
+                <li>Fortnite</li>
+                <li>Fall Guys</li>
+                <li>Rocket League</li>
+              </ul>              
+            </div>
+            <span class="pe-5 fw-bold" style="float: right">Mais informaçoes...</span>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center justify-content-lg-end pt-3">
+        <button type="button" class="btn btn-dark">Carregar mais plataformas</button>
+      </div>
+    </section>
+    <section id="novidades" class="container-fluid p-5">
+      <div class="row">
+        <div class="col-12 col-lg-8">
+          <h1 class="text-start py-3">Novidades</h1>
+          <div class="container-fluid px-0">
+            <div class="row py-4 border-bottom border-3 border-secondary">
+              <div class="col-12 col-lg-4 text-center">
+                <img src="imagens/novidade1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-8">
+                <h5 class="text-start pt-2">Katherine Waterston está em Animais Fantásticos 3? Rumores apontam represália
+                  contra atriz que faz Tina Goldstein</h5>
+                <p>Tina Goldstein, interpretada por Katherine Waterston, não apareceu nas prévias e trailers de Animais
+                  Fantásticos 3.
+                </p>
+                <div class="d-flex">
+                  <span class="badge rounded-pill bg-primary">hollywood</span>
+                  <span class="badge rounded-pill bg-warning ms-2">harry potter</span>
+                </div>
+              </div>
+            </div>
+            <div class="row py-4 border-bottom border-3 border-secondary">
+              <div class="col-12 col-lg-4 text-center">
+                <img src="imagens/novidade2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-8">
+                <h5 class="text-start pt-2">Marvel derrota DC em disputa importante: Doutor Estranho 2 desbanca Batman na pré-venda de ingressos</h5>
+                <p>Doutor Estranho 2 de Benedict Cumberbatch bateu números de Batman de Robert Pattinson na venda de ingressos antecipados.</p>
+                <div class="d-flex">
+                  <span class="badge rounded-pill bg-danger">marvel</span>
+                  <span class="badge rounded-pill bg-success ms-2">DC</span>
+                </div>
+              </div>
+            </div>
+            <div class="row py-4">
+              <div class="col-12 col-lg-4 text-center">
+                <img src="imagens/novidade3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 col-lg-8">
+                <h5 class="text-start pt-2">Sonic 2: Cena pós-crédito introduz enredo do terceiro filme com AQUELE personagem</h5>
+                <p>Com Jim Carrey e James Marsden, o segundo filme do ouriço da Sega entrega uma produção lotada de nostalgia.</p>
+                <div class="d-flex">
+                  <span class="badge rounded-pill bg-info">games</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 ps-4">
+         
+          <h1 class="text-start">Editorial</h1>
+          <p><i class="fa-solid fa-user me-2"></i><span class="fw-bold">Redação: </span>Pedro Francisco</p>
+          <p><i class="fa-solid fa-user me-2"></i><span class="fw-bold">Pesquisa: </span>Pedro Francisco</p>
+          <p><i class="fa-solid fa-user me-2"></i><span class="fw-bold">Gerente Geral: </span>Pedro Francisco</p>
+          <p class="fw-bold fs-4 text-start">redes sociais:</p>
+          <i class="fa-brands fa-facebook-square fs-1"></i><i class="fa-brands fa-twitter ps-4 fs-1"></i><i class="fa-brands fa-instagram ps-4 fs-1"></i>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <footer class="bg-secondary py-4">
+    <p class="text-center mb-0"><i class="fa-brands fa-github pe-2"></i><a class="link-light text-decoration-none" href="https://github.com/pedrosantayana/diw-pucmg">Repositório</a></p>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </html>
